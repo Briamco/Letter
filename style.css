@@ -1,0 +1,55 @@
+:root {
+  --wine: #5e2129;
+  --red: #d9534f;
+}
+
+
+body {  
+  font-family: 'Arial', sans-serif;  
+  background-color: var(--wine);  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;  
+  align-items: center;  
+  height: 100vh;  
+  margin: 0;
+}
+
+.carta {  
+  background-color: #fff;  
+  padding: 20px 30px; 
+  margin: 20px;
+  border-radius: 10px;  
+  max-width: 600px;
+  text-align: justify;
+}
+
+.text {
+  background-image: repeating-linear-gradient(transparent, transparent 27px, rgb(0, 255, 255) 28px);
+  background-position: 0 28px;
+  background-size: 100% 28px;
+  font-style: italic;
+  border: 1px solid rgb(0, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  gap: 0px;
+  align-items: center;
+  gap: 10px;
+}
+
+.header span {
+  color: #999;
+}
+
+.header h1 {  
+  color: var(--red);  
+}
+
+p {  
+  line-height: 1.5;
+}  
