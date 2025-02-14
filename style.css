@@ -16,6 +16,10 @@ body {
   margin: 0;
 }
 
+iframe {
+  display: none;
+}
+
 .carta {  
   background-color: #fff;  
   padding: 20px 30px; 

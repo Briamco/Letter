@@ -8,7 +8,7 @@
 </head>  
 <body>  
 
-  <audio src="assets/Ethereal.mp3" autoplay loop></audio>
+  <iframe id="spotifyPlayer" style="border-radius:12px" src="https://open.spotify.com/embed/track/7gymMiUpp1AOYR5EiRDDrO?utm_source=generator&theme=0" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
   <div class="carta">
     <div class="text">
@@ -30,6 +30,20 @@
     </div>  
   </div>
   
+  <script>
+    function playSpotify() {
+    const iframe = document.getElementById("spotifyPlayer");
+    iframe.contentWindow?.postMessage({ command: "play" }, "*");
+    
+    // Eliminar el listener después del primer toque
+    document.removeEventListener("click", playSpotify);
+    document.removeEventListener("touchstart", playSpotify);
+  }
+
+  // Esperar a que el usuario toque la pantalla o haga clic
+  document.addEventListener("click", playSpotify);
+  document.addEventListener("touchstart", playSpotify);
+  </script>
 </body>  
 </html>
 
