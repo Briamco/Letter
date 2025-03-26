@@ -7,43 +7,7 @@
   <link rel="stylesheet" href="style.css">  
 </head>  
 <body>  
-
-  <iframe id="spotifyPlayer" style="border-radius:12px" src="https://open.spotify.com/embed/track/7gymMiUpp1AOYR5EiRDDrO?utm_source=generator&theme=0" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-  <div class="carta">
-    <div class="text">
-      <div class="header">
-        <h1>Rosmely</h1>
-        <span>Tinkiwinki</sp>
-      </div>
-      <p>Quiero que sepas que eres una persona muy especial para mi apesar del poco tiempo que llevamos conociendonos, desde que empezamos a hablar hubo algo que me di cuenta, no se si fue tu sonrisa o tu forma de ser, pero eres alguien muy especial.</p>
-
-      <p>Tu sabes que es la primera vez que me estoy atreviendo a "Confesar mis emociones" y que mejor manera que hacerlo con el arte que conzco haciendo una carta digital con <b>HTML y CSS</b> talvez no es muy bonita pero eso no es lo que cuenta.</p>
-
-      <p>Asi que quiero decir que:</p>
-      <h1>Siento algo por ti</h1>
-      <p>Ya hice mi parte ahora depende de ti lo que sigue, para ser sincero.</p>
-
-      <p>Briam.</p>
-
-      PD: Si quieres ver el codigo fuente de esta carta puedes verlo en mi repositorio de <a href="">GitHub</a>.
-    </div>  
-  </div>
-  
-  <script>
-    function playSpotify() {
-    const iframe = document.getElementById("spotifyPlayer");
-    iframe.contentWindow?.postMessage({ command: "play" }, "*");
-    
-    // Eliminar el listener después del primer toque
-    document.removeEventListener("click", playSpotify);
-    document.removeEventListener("touchstart", playSpotify);
-  }
-
-  // Esperar a que el usuario toque la pantalla o haga clic
-  document.addEventListener("click", playSpotify);
-  document.addEventListener("touchstart", playSpotify);
-  </script>
+  <a href="/carta.html">carta</a>
 </body>  
 </html>
 

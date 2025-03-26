@@ -1,0 +1,87 @@
+body {  
+  gap: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.carta {  
+  background-color: #fff;  
+  padding: 20px 30px; 
+  margin: 20px;
+  border-radius: 10px;  
+  max-width: 600px;
+  text-align: justify;
+  box-shadow: 5px 10px 10px #00000054;
+}
+
+.text {
+  background-image: repeating-linear-gradient(transparent, transparent 27px, rgb(0, 255, 255) 28px);
+  background-position: 0 28px;
+  background-size: 100% 28px;
+  font-style: italic;
+  border: 1px solid rgb(0, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  gap: 0px;
+  align-items: center;
+  gap: 10px;
+}
+
+#nombre {  
+  color: var(--red);
+  transition: opacity 1s ease-in-out, background 1s ease-in-out;
+}
+
+p {  
+  line-height: 1.5;
+}
+
+.touch {
+  display: flex;
+  justify-content: center;
+}
+
+.touch-btn {
+  width: 50%;
+}
+
+.touch-btn:hover {
+  scale: 1.1;
+  transition: all 0.5s;
+}
+
+.touch-btn:active {
+  background: var(--wine);
+}
+
+#hidden-text {
+  transition: all 0.5s;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+form input {
+  width: 100%;
+}
+
+textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 95%;
+}
+
+textarea::placeholder {
+  color: var(--red);
+}
